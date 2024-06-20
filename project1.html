@@ -60,19 +60,20 @@
       .text {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         width: 358px;
-        height: 796px;
         margin: 0 150px 49px 0;
-        justify-content: space-between;
       }
       .text p {
-        margin-bottom: 10px;
+        padding: 0 0 10px 0;
+        margin: 0;
         color: #ababab;
         font-size: 24px;
         font-weight: 700;
       }
       .text h1 {
-        margin-bottom: 80px;
+        padding: 0;
+        margin: 0;
         color: #303030;
         font-size: 48px;
         font-weight: 700;
@@ -81,6 +82,10 @@
         width: 692px;
         height: 845px;
         border-radius: 12px;
+      }
+      .desc {
+        height: 157px;
+        margin: 0 0 80px 0;
       }
       .badge {
         width: 56px;
@@ -98,14 +103,18 @@
         padding: 0;
       }
       .text ul > li {
-        padding: 0 0 12px 0px;
+        padding: 12px 0;
       }
       .loc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
       }
-      .preciseLoc {
+      .holy {
+        margin-right: 16px;
       }
-      div > li {
-
+      .marginOfBadge {
+        margin-bottom: 15.8px;
       }
     </style>
   </head>
@@ -150,29 +159,60 @@
       </div>
       <div class="destination">
         <div class="text">
-          <p>tours | 6 days</p>
-          <h1>Destination of Our Agency</h1>
-          <ul>
-            <li>
-              <div class="badge">D1</div>
-            </li>
-            <li>
-              <div class="badge">D2</div>
-            </li>
-            <li>
-              <div class="badge">D3</div>
+          <div class="desc">
+            <p>tours | 6 days</p>
+            <h1>Destination of Our Agency</h1>
+          </div>
+          <div class="loc">
+            <div class="holy">
+              <ul>
+                <li>
+                  <div class="badge marginOfBadge">D1</div>
+                </li>
+                <li>
+                  <div class="badge marginOfBadge">D2</div>
+                </li>
+                <li>
+                  <div class="badge marginOfBadge">D3</div>
+                </li>
+                <li>
+                  <div class="badge marginOfBadge">D4</div>
+                </li>
+                <li>
+                  <div class="badge marginOfBadge">D5</div>
+                </li>
+                <li>
+                  <div class="badge">D6</div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <p>Sukhbaatar square</p>
+                <p>Ulaanbaatar</p>
               </div>
-            </li>
-            <li>
-              <div class="badge">D4</div>
-            </li>
-            <li>
-              <div class="badge">D5</div>
-            </li>
-            <li>
-              <div class="badge">D6</div>
-            </li>
-          </ul>
+              <div>
+                <p>Sukhbaatar square</p>
+                <p>Ulaanbaatar</p>
+              </div>
+              <div>
+                <p>Sukhbaatar square</p>
+                <p>Ulaanbaatar</p>
+              </div>
+              <div>
+                <p>Sukhbaatar square</p>
+                <p>Ulaanbaatar</p>
+              </div>
+              <div>
+                <p>Sukhbaatar square</p>
+                <p>Ulaanbaatar</p>
+              </div>
+              <div>
+                <p>Sukhbaatar square</p>
+                <p>Ulaanbaatar</p>
+              </div>
+            </div>
+          </div>
         </div>
         <img src="./picture 1.png" alt="" />
       </div>
