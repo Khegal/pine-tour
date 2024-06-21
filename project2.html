@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pine tour.</title>
+    <title>Pine tour</title>
     <style>
       body {
         margin: 0;
@@ -21,29 +17,28 @@
         margin-bottom: 120px;
       }
       .hero {
+        margin: 0 0 240px 0;
         text-align: center;
       }
-      .hero h1 {
-        font-size: 72px;
-        margin: 0 0 8px 0;
-        font-weight: 700;
-        color: #303030;
-        font-weight: 700;
+      .description {
+        margin: 80px;
       }
-      .hero p {
+      .description h1 {
+        font-size: 72px;
+        color: #303030;
+        margin: 0 0 8px 0;
+      }
+      .description p {
         font-size: 24px;
         margin: 0;
         color: #ababab;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 80px;
       }
       .imgs {
         display: flex;
-        flex-direction: row;
-        gap: 21px;
+        gap: 20px;
         justify-content: center;
-        flex-wrap: wrap;
         margin-bottom: 240px;
       }
       .imgs img {
@@ -64,14 +59,14 @@
         width: 358px;
         margin: 0 150px 49px 0;
       }
-      .desc p {
+      .day {
         padding: 0 0 10px 0;
         margin: 0;
         color: #ababab;
         font-size: 24px;
         font-weight: 700;
       }
-      .desc h1 {
+      .mile {
         padding: 0;
         margin: 0;
         color: #303030;
@@ -84,7 +79,6 @@
         border-radius: 12px;
       }
       .desc {
-        height: 157px;
         margin: 0 0 80px 0;
       }
       .badge {
@@ -97,18 +91,21 @@
         justify-content: center;
         align-items: center;
       }
-      .text ul {
+      ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
       }
-      .text ul > li {
+      li {
         padding: 12px 0;
       }
       .loc {
         display: flex;
         flex-direction: row;
         align-items: center;
+      }
+      .locs {
+        width: 231px;
       }
       .holy {
         margin-right: 16px;
@@ -128,7 +125,6 @@
       }
     </style>
   </head>
-
   <body>
     <div>
       <div class="header">
@@ -158,69 +154,45 @@
         </svg>
       </div>
       <div class="hero">
-        <h1>Khuvsgul Lake</h1>
-        <p class="tripDescription">trip</p>
-      </div>
-      <div class="imgs">
-        <img src="./image 30.png" alt="" />
-        <img src="./image 31.png" alt="" />
-        <img src="./image 32.png" alt="" />
-        <img src="./image 33.png" alt="" />
+        <div class="description">
+          <h1>Khuvsgul Lake</h1>
+          <p>trip</p>
+        </div>
+        <div class="imgs">
+          <img src="./image 30.png" alt="" />
+          <img src="./image 31.png" alt="" />
+          <img src="./image 32.png" alt="" />
+          <img src="./image 33.png" alt="" />
+        </div>
       </div>
       <div class="destination">
         <div class="text">
           <div class="desc">
-            <p>tours | 6 days</p>
-            <h1>Destination of Our Agency</h1>
+            <p class="day">tours | 6 days</p>
+            <p class="mile">Destination of Our Agency</p>
           </div>
           <div class="loc">
             <div class="holy">
               <ul>
                 <li>
-                  <div class="badge marginOfBadge">D1</div>
+                  <div class="badge">D1</div>
                 </li>
                 <li>
-                  <div class="badge marginOfBadge">D2</div>
+                  <div class="badge">D2</div>
                 </li>
                 <li>
-                  <div class="badge marginOfBadge">D3</div>
+                  <div class="badge">D3</div>
                 </li>
                 <li>
-                  <div class="badge marginOfBadge">D4</div>
+                  <div class="badge">D4</div>
                 </li>
                 <li>
-                  <div class="badge marginOfBadge">D5</div>
+                  <div class="badge">D5</div>
                 </li>
                 <li>
                   <div class="badge">D6</div>
                 </li>
               </ul>
-            </div>
-            <div>
-              <div>
-                <p>Sukhbaatar square</p>
-                <p class="locBase">Ulaanbaatar</p>
-              </div>
-              <div>
-                <p>Sukhbaatar square</p>
-                <p class="locBase">Ulaanbaatar</p>
-              </div>
-              <div>
-                <p>Sukhbaatar square</p>
-                <p class="locBase">Ulaanbaatar</p>
-              </div>
-              <div>
-                <p>Sukhbaatar square</p>
-                <p class="locBase">Ulaanbaatar</p>
-              </div>
-              <div>
-                <p>Sukhbaatar square</p>
-                <p class="locBase">Ulaanbaatar</p>
-              </div>
-              <div>
-                <p>Sukhbaatar square</p>
-                <p class="locBase">Ulaanbaatar</p>
-              </div>
             </div>
           </div>
         </div>
