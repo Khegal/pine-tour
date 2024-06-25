@@ -4,204 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: sans-serif;
-        background-color: #f4f4f4;
-      }
-      .header {
-        padding: 19px;
-        background-color: #101010;
-        margin-bottom: 120px;
-        display: flex;
-        justify-content: center;
-      }
-      .hero {
-        text-align: center;
-        margin-bottom: 240px;
-      }
-      .text {
-        margin: 0 0 80px 0;
-      }
-      .tripName {
-        font-size: 72px;
-        font-weight: 700;
-        margin: 0 0 8px 0;
-      }
-      .name {
-        font-size: 24px;
-        font-weight: 700;
-        color: #ababab;
-        text-transform: uppercase;
-        margin: 0;
-      }
-      .imgs {
-        display: flex;
-        flex-direction: row;
-        gap: 21px;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-bottom: 240px;
-      }
-      .imgs img {
-        height: 400px;
-        width: 284px;
-        border-radius: 12px;
-      }
-      .badge {
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background-color: #1d1f24;
-        color: #16a94a;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 16px;
-      }
-      .container {
-        width: 1198px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 240px;
-      }
-      .trips {
-        display: flex;
-      }
-      .milestones {
-        width: 358px;
-        margin: 0;
-        text-align: left;
-      }
-      .container .trips .milestones ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-      }
-      .container img {
-        width: 692px;
-        height: 845px;
-        border-radius: 12px;
-      }
-      .days {
-        font-size: 24px;
-        font-weight: 700;
-        color: #ababab;
-        margin: 0 0 10px 0;
-      }
-      .descri {
-        font-size: 48px;
-        font-weight: 700;
-        color: #303030;
-        margin: 0 0 80px 0;
-      }
-      .shit {
-        display: flex;
-        flex-direction: column;
-      }
-      .container .trips .milestones ul li {
-        display: flex;
-        flex-direction: row;
-        padding: 12px;
-        margin-bottom: 15.8px;
-      }
-      .details {
-        display: flex;
-        flex-direction: column;
-        margin: auto 0;
-      }
-      .destination {
-        margin: 0 0 4px 0;
-        color: #000000;
-        font-size: 16px;
-        font-weight: 700;
-      }
-      .location {
-        color: #777777;
-        font-size: 14px;
-        font-weight: 400;
-        margin: 0;
-      }
-      .prices {
-        margin: 0 auto 240px auto;
-      }
-      .prices .name1 {
-        text-align: center;
-        margin-bottom: 80px;
-      }
-      .prices1 {
-        font-size: 24px;
-        font-weight: 700;
-        color: #ababab;
-        margin: 0 0 10px 0;
-        text-transform: uppercase;
-      }
-      .prices2 {
-        font-size: 48px;
-        font-weight: 700;
-        color: #303030;
-        width: 299px;
-        margin: 0 auto;
-      }
-      .packs {
-        display: flex;
-        justify-content: center;
-        gap: 28px;
-      }
-      .starterPack {
-        width: 285px;
-        height: 370px;
-        background-color: #ffffff;
-        border-radius: 24px;
-      }
-      .luxuryPack {
-        width: 285px;
-        height: 370px;
-        background-color: #ffffff;
-        border-radius: 24px;
-        border: 2px solid #18ba51;
-      }
-      .ready {
-        background-color: #171717;
-        padding: 150px 0;
-      }
-      .ready .name2 p {
-        font-size: 32px;
-        font-weight: 700;
-        color: #ffffff;
-        text-align: center;
-        margin: 0 0 10px 0;
-      }
-      .order {
-        display: flex;
-        justify-content: center;
-        width: 130px;
-        border-radius: 4px;
-        background-color: #18ba51;
-        padding: 10px 20px;
-        color: white;
-        margin: 0 auto;
-        font-size: 16px;
-        font-weight: 700;
-      }
-      .footer {
-        display: flex;
-        justify-content: space-between;
-        background-color: #101010;
-        border: 1px solid #303030;
-        padding: 80px 120px;
-      }
-      .contact {
-        width: 381px;
-        display: flex;
-        gap: 20px;
-      }
-      .icons {
-        display: flex;
-      }
-    </style>
+    <link rel="stylesheet" href="./project1.css" />
   </head>
   <body>
     <div>
@@ -295,24 +98,45 @@
               </ul>
             </div>
           </div>
-          <img src="./picture 1.png" alt="" />
+          <div>
+            <img src="./picture 1.png" alt="" />
+          </div>
         </div>
       </div>
-      <div class="prices">
-        <div class="name1">
-          <p class="prices1">pricing</p>
-          <p class="prices2">Pricing of Our Agency</p>
-        </div>
-        <div class="packs">
-          <div class="starterPack"></div>
-          <div class="luxuryPack"></div>
+      <div class="price-section">
+        <p>pricing</p>
+        <h2>Pricing of<br />Our Agency</h2>
+        <div class="prices">
+          <div class="prices-card">
+            <div class="prices-card-title">Starter Pack</div>
+            <lu class="prices-card-list">
+              <li>Trip</li>
+              <li>Hotel</li>
+              <li>Breakfast</li>
+              <li>Lunch</li>
+              <li>Dinner</li>
+            </lu>
+            <div class="prices-card-price">2100$</div>
+          </div>
+          <div class="prices-card">
+            <div class="prices-card-title">Luxury Pack</div>
+            <lu class="prices-card-list">
+              <li><b>Starter pack</b></li>
+              <li>Flight</li>
+              <li>Cruise trip</li>
+              <li>Cruise trip</li>
+            </lu>
+            <div class="prices-card-price">4200$</div>
+          </div>
         </div>
       </div>
       <div class="ready">
         <div class="name2">
           <p>Are you Ready?</p>
         </div>
-        <div class="order">Order Now</div>
+        <a href="https://www.instagram.com/pineconemongolia/" class="order"
+          >Order Now</a
+        >
       </div>
       <div class="footer">
         <div class="icons">
@@ -328,21 +152,37 @@
               fill="white"
             />
           </svg>
-          <div class="contact">
-            <div class="info">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.6799 1.91992H4.31992C2.99512 1.91992 1.91992 2.99512 1.91992 4.31992V19.6799C1.91992 21.0047 2.99512 22.0799 4.31992 22.0799H19.6799C21.0047 22.0799 22.0799 21.0047 22.0799 19.6799V4.31992C22.0799 2.99512 21.0047 1.91992 19.6799 1.91992ZM17.7599 9.11992H16.7999C15.7727 9.11992 15.3599 9.35992 15.3599 10.0799V11.5199H17.7599L17.2799 13.9199H15.3599V21.1199H12.9599V13.9199H11.0399V11.5199H12.9599V10.0799C12.9599 8.15992 13.9199 6.71992 15.8399 6.71992C17.2319 6.71992 17.7599 7.19992 17.7599 7.19992V9.11992Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
+        </div>
+        <div class="contact">
+          <div class="info">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.6799 1.91992H4.31992C2.99512 1.91992 1.91992 2.99512 1.91992 4.31992V19.6799C1.91992 21.0047 2.99512 22.0799 4.31992 22.0799H19.6799C21.0047 22.0799 22.0799 21.0047 22.0799 19.6799V4.31992C22.0799 2.99512 21.0047 1.91992 19.6799 1.91992ZM17.7599 9.11992H16.7999C15.7727 9.11992 15.3599 9.35992 15.3599 10.0799V11.5199H17.7599L17.2799 13.9199H15.3599V21.1199H12.9599V13.9199H11.0399V11.5199H12.9599V10.0799C12.9599 8.15992 13.9199 6.71992 15.8399 6.71992C17.2319 6.71992 17.7599 7.19992 17.7599 7.19992V9.11992Z"
+                fill="white"
+              />
+            </svg>
+            <a>Facebook</a>
+          </div>
+          <div class="info">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.6799 1.91992H4.31992C2.99512 1.91992 1.91992 2.99512 1.91992 4.31992V19.6799C1.91992 21.0047 2.99512 22.0799 4.31992 22.0799H19.6799C21.0047 22.0799 22.0799 21.0047 22.0799 19.6799V4.31992C22.0799 2.99512 21.0047 1.91992 19.6799 1.91992ZM17.7599 9.11992H16.7999C15.7727 9.11992 15.3599 9.35992 15.3599 10.0799V11.5199H17.7599L17.2799 13.9199H15.3599V21.1199H12.9599V13.9199H11.0399V11.5199H12.9599V10.0799C12.9599 8.15992 13.9199 6.71992 15.8399 6.71992C17.2319 6.71992 17.7599 7.19992 17.7599 7.19992V9.11992Z"
+                fill="white"
+              />
+            </svg>
+            <a>Instagram</a>
           </div>
         </div>
       </div>
