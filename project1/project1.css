@@ -26,7 +26,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
-.images {
+.imgs {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -97,13 +97,13 @@ body {
   justify-content: center;
   z-index: 1;
 }
-.trip-item-title {
+.location-precise {
   color: #000000;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 4px;
 }
-.trip-item-location {
+.location {
   color: #777777;
   font-size: 14px;
 }
