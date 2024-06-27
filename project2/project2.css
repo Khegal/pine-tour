@@ -264,6 +264,7 @@ button {
   align-items: center;
   gap: 78px;
   padding: 32px 144px;
+  margin: 0 0 48px 0;
 }
 .customers img {
   height: 326px;
@@ -285,8 +286,6 @@ button {
   font-weight: 500;
   margin: 0 0 16px 0;
 }
-.customers .recomendation .content .whom {
-}
 .customers .recomendation .content .whom h4 {
   color: #4caf4f;
   font-size: 20px;
@@ -297,4 +296,54 @@ button {
   color: #89939e;
   font-size: 16px;
   font-weight: 400;
+}
+.customers .recomendation .companies {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.customers .recomendation .companies .icons {
+  display: flex;
+  gap: 41px;
+}
+.customers .recomendation .companies .meetAllCustomers h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4caf4f;
+  margin: 0;
+}
+.customers .recomendation .companies .meetAllCustomers {
+  display: flex;
+}
+.communityUpdate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.communityUpdate .text {
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+.communityUpdate .text h2 {
+  color: #4d4d4d;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+.communityUpdate .text p {
+  margin: 0;
+  width: 628px;
+  color: #717171;
+  font-size: 16px;
+  font-weight: 400;
+}
+.communityUpdate .readMore {
+  display: flex;
+  padding: 0 144px;
+  gap: 24px;
+}
+.communityUpdate .readMore img {
+  width: 368px;
+  height: 286px;
+  border-radius: 8px;
 }
