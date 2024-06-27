@@ -1,33 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
 }
-.header {
+.container {
+  width: 1184px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+:root {
+  --primary-color: #4caf4f;
+  --secondary-color: #263238;
+  --black: #263238;
+  --D-grey: #4d4d4d;
+  --grey: #717171;
+  --L-grey: #89939e;
+  --grey-blue: #abbed1;
+  --silver: #f5f7fa;
+  --white: #ffffff;
+}
+.color-primary {
+  color: var(--primary-color);
+}
+.color-secondary {
+  color: var(--secondary-color);
+}
+.color-silver {
+  color: var(--silver);
+}
+.color-black {
+  color: var(--black);
+}
+.color-D-grey {
+  color: var(--D-grey);
+}
+.color-grey {
+  color: var(--grey);
+}
+.color-L-grey {
+  color: var(--L-grey);
+}
+.color-grey-blue {
+  color: var(--grey-blue);
+}
+.color-white {
+  color: var(--white);
+}
+h1 {
+  font-size: 68px;
+  font-weight: 600;
+  line-height: 76px;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #f5f7fa;
+  padding: 22px;
+}
+
+nav {
+  justify-content: space-around;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #f5f7fa;
-  padding: 22px 120px 22px 105px;
 }
-.header .menu {
+nav .menu {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-.header .menu a {
-  text-decoration: none;
+nav .menu a {
   color: #18191f;
   font-size: 14px;
   font-weight: 400;
 }
-.header .login {
-  display: flex;
-  justify-content: right;
-  gap: 14px;
-}
-.header .login button {
-  border: none;
+nav .login button {
   padding: 10px 20px;
   border-radius: 6px;
   transition: all 0.3s;
@@ -39,50 +111,32 @@ button:hover {
   background-color: #f5f7fa;
   color: #4caf4f;
 }
-.hero {
+.hero .container {
   display: flex;
   justify-content: center;
   gap: 104px;
-  background-color: #f5f7fa;
-  padding: 96px 144px;
+  padding: 96px 0;
   align-items: center;
   margin: 0 0 40px 0;
 }
-.hero .text {
+.hero .container .text {
   margin: 0 0 32px 0;
 }
-.hero h1 {
+.hero .container .text h1 {
+  color: #4d4d4d;
   font-size: 64px;
   font-weight: 600;
   margin: 0 0 16px 0;
 }
-.hero span {
+.hero .container .text span {
   margin: 0;
   color: #4caf4f;
 }
-.hero p {
+.hero .container .text p {
   margin: 0;
   color: #717171;
   font-size: 16px;
   font-weight: 400;
-}
-.hero .dots {
-  display: flex;
-  position: absolute;
-  gap: 8px;
-  align-items: center;
-  top: 657px;
-}
-.hero .dots .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  opacity: 30%;
-  background-color: #4caf4f;
-  transition: all 0.3s;
-}
-.hero .dots .dot:hover {
-  opacity: 100%;
 }
 .clients {
   text-align: center;
