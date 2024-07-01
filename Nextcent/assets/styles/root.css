@@ -53,11 +53,11 @@ body {
   color: var(--white);
 }
 h1 {
+  margin: 0;
   font-size: 68px;
   font-weight: 600;
   line-height: 76px;
 }
-h1,
 h2,
 h3,
 h4,
@@ -85,7 +85,7 @@ header {
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
   align-items: center;
 }
@@ -103,36 +103,37 @@ nav .login button {
   padding: 10px 20px;
   border-radius: 6px;
   transition: all 0.3s;
-  background-color: #4caf4f;
+  background-color: var(--primary-color);
   color: #ffffff;
-  border: 2px solid #4caf4f;
+  border: 2px solid var(--primary-color);
 }
 button:hover {
   background-color: #f5f7fa;
   color: #4caf4f;
 }
-.hero .container {
-  display: flex;
-  justify-content: center;
-  gap: 104px;
+
+.hero {
+  background-color: #f5f7fa;
   padding: 96px 0;
-  align-items: center;
   margin: 0 0 40px 0;
 }
-.hero .container .text {
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .text {
   margin: 0 0 32px 0;
 }
-.hero .container .text h1 {
-  color: #4d4d4d;
+.hero h1 {
   font-size: 64px;
-  font-weight: 600;
   margin: 0 0 16px 0;
 }
-.hero .container .text span {
+.hero span {
   margin: 0;
   color: #4caf4f;
 }
-.hero .container .text p {
+.hero p {
   margin: 0;
   color: #717171;
   font-size: 16px;
@@ -142,25 +143,23 @@ button:hover {
   text-align: center;
   margin: 0 0 40px 0;
 }
-.clients h2 {
+.clients text h2 {
   font-size: 36px;
   font-weight: 600;
   color: #4d4d4d;
-  margin: 0 0 8px 0;
+  margin-bottom: 8px;
 }
-.clients p {
+.clients text p {
   color: #717171;
   font-size: 16px;
   font: 400;
-  margin: 0;
+  line-height: 16px;
 }
 .clients .icons {
-  margin: 0 144px;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 136px;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px 0;
 }
 .community {
@@ -171,6 +170,7 @@ button:hover {
   margin: 0 0 16px 0;
 }
 .community .description h2 {
+  line-height: 44px;
   margin: 0 0 8px 0;
   font-size: 36px;
   font-weight: 600;
@@ -181,12 +181,11 @@ button:hover {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
+  line-height: 24px;
 }
 .community .why {
   display: flex;
-  margin: 0 144px;
-  justify-content: center;
-  gap: 127.5px;
+  justify-content: space-between;
 }
 .community .why .describe {
   box-sizing: border-box;
@@ -209,12 +208,12 @@ button:hover {
   margin: 8px 0 0 0;
 }
 .body .unlock {
+  margin: 0 0 48px 0;
+}
+.body .unlock .container {
   display: flex;
   align-items: center;
-  padding: 0 144px;
-  gap: 49px;
-  justify-content: center;
-  margin: 0 0 48px 0;
+  justify-content: space-between;
 }
 .body .unlock .text {
   width: 601px;
@@ -224,11 +223,14 @@ button:hover {
   font-size: 36px;
   font-weight: 600;
   color: #4d4d4d;
+  line-height: 44px;
+  margin-bottom: 16px;
 }
 .body .unlock .text p {
   color: #717171;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 button {
   padding: 14px 32px;
@@ -240,11 +242,14 @@ button {
 }
 .achievement {
   background-color: #f5f7fa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 72px;
-  padding: 64px 144px;
+  padding: 64px 0;
+  margin-bottom: 48px;
+}
+.achievement .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .achievement .sectionHeading {
   width: 540px;
@@ -288,93 +293,8 @@ button {
   font-weight: 400;
   color: #717171;
 }
-.calender {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-  padding: 0 144px;
-  margin: 48px;
-}
-.calender .text {
-  width: 601px;
-}
-.calender .text h2 {
-  font-size: 36px;
-  font-weight: 600;
-  color: #4d4d4d;
-  margin: 0 0 16px 0;
-}
-.calender .text p {
-  font-size: 14px;
-  font-weight: 400;
-  color: #717171;
-  margin: 0 0 32px 0;
-}
-.customers {
-  background-color: #f5f7fa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 78px;
-  padding: 32px 144px;
-  margin: 0 0 48px 0;
-}
-.customers img {
-  height: 326px;
-  width: 326px;
-  box-shadow: 0px 8px 16px 0px #abbed166;
-  border-radius: 8px;
-}
-.customers .recomendation {
-  width: 748px;
-  display: flex;
-  flex-direction: column;
-}
-.customers .recomendation .content {
-  margin: 0 0 32px 0;
-}
-.customers .recomendation .content p {
-  color: #717171;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0 0 16px 0;
-}
-.customers .recomendation .content .whom h4 {
-  color: #4caf4f;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 0 8px 0;
-}
-.customers .recomendation .content .whom p {
-  color: #89939e;
-  font-size: 16px;
-  font-weight: 400;
-}
-.customers .recomendation .companies {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-.customers .recomendation .companies .icons {
-  display: flex;
-  gap: 41px;
-}
-.customers .recomendation .companies .meetAllCustomers h4 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #4caf4f;
-  margin: 0;
-}
-.customers .recomendation .companies .meetAllCustomers {
-  display: flex;
-}
 .communityUpdate {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin: 0 0 121px 0;
 }
 .communityUpdate .text {
   text-align: center;
@@ -408,4 +328,19 @@ button {
   box-shadow: 0px 8px 16px 0px #abbed166;
   padding: 16px;
   position: absolute;
+}
+.footer-top {
+  background-color: #f5f7fa;
+  padding: 32px 0;
+}
+.footer-top h1 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.footer-top .container {
+  text-align: center;
+}
+.footer-bottom {
+  background-color: #263238;
+  padding: 64px 165px;
 }
