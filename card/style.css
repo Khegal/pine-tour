@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 50px 0;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 1px hsla(0, 0%, 100%, 0.004);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.container {
+  margin: 0 auto;
+  width: 1100px;
+  padding: 0 40px;
+}
+.gogo-story {
+  display: flex;
+  gap: 15px;
+}
+.story {
+  width: 171px;
+  height: 235px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  z-index: -1px;
+}
+.story img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+.story:hover {
+}
+.story img:hover {
+  transform: scale(1.05);
+}
+.logo {
+  top: 0;
+  display: block;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+.logo img {
+  width: 30px;
+  height: 30px;
+}

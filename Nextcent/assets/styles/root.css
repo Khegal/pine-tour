@@ -78,6 +78,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+<<<<<<< HEAD
 
 header {
   background-color: #f5f7fa;
@@ -87,13 +88,19 @@ header {
 nav {
   justify-content: space-between;
   display: flex;
+=======
+.footer-bottom {
+  padding: 65px 0;
+  background-color: #263238;
+>>>>>>> refs/remotes/origin/main
   align-items: center;
 }
-nav .menu {
+.footer-bottom .container {
   display: flex;
-  align-items: center;
-  gap: 50px;
+  flex-direction: row;
+  justify-content: space-between;
 }
+<<<<<<< HEAD
 nav .menu a {
   color: #18191f;
   font-size: 14px;
@@ -269,14 +276,34 @@ button {
   font-weight: 400;
 }
 .achievement .counts {
+=======
+.footer-bottom .logo {
+>>>>>>> refs/remotes/origin/main
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.achievement .counts .row {
+.footer-bottom .logo .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-bottom p {
+  color: #f5f7fa;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.footer-bottom .container .info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.shits {
   display: flex;
   gap: 30px;
 }
+<<<<<<< HEAD
 .achievement .counts .row .details {
   width: 255px;
   display: flex;
@@ -328,6 +355,29 @@ button {
   box-shadow: 0px 8px 16px 0px #abbed166;
   padding: 16px;
   position: absolute;
+=======
+.footer-bottom .shits h4 {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #ffffff;
+}
+input {
+  width: 255px;
+  height: 40px;
+  border: none;
+  top: 52px;
+  gap: 0px;
+  border-radius: 8px;
+  background: rgba(81, 91, 96, 255);
+}
+input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #d9dbe1;
+>>>>>>> refs/remotes/origin/main
 }
 .footer-top {
   background-color: #f5f7fa;
