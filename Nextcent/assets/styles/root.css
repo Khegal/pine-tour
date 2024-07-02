@@ -361,6 +361,59 @@ button {
   text-align: center;
 }
 .footer-bottom {
+  padding: 65px 0;
   background-color: #263238;
-  padding: 64px 165px;
+  align-items: center;
+}
+.footer-bottom .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-bottom .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer-bottom .logo .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-bottom p {
+  color: #f5f7fa;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.footer-bottom .container .info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.shits {
+  display: flex;
+  gap: 30px;
+}
+.footer-bottom .shits h4 {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #ffffff;
+}
+input {
+  width: 255px;
+  height: 40px;
+  border: none;
+  top: 52px;
+  gap: 0px;
+  border-radius: 8px;
+  background: rgba(81, 91, 96, 255);
+}
+input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #d9dbe1;
 }
